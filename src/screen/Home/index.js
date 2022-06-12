@@ -39,7 +39,7 @@ export default class Home extends React.Component {
                 <TouchableOpacity onPress={this.logout} style={{borderColor:"red",backgroundColor:"red",padding:5,width:80,justifyContent:'center',alignItems:"center",marginLeft:"78%",marginTop:20}}>
                     <Text style={{color:"white",fontWeight:"bold"}}>Logout</Text>
                 </TouchableOpacity>
-                <Image source={require("../../assets/logo.png")} style={{width:350,height:150,alignSelf:'center',marginTop:50}}/>
+                <Image source={require("../../assets/logo.png")} style={{width:350,height:150,alignSelf:'center',marginTop:30}}/>
 
 
                 <View  style={styles.orderCard}>
