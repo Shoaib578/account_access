@@ -1,8 +1,9 @@
 import React from 'react'
-import {View,Text, ActivityIndicator, TouchableOpacity,StyleSheet,Dimensions} from 'react-native'
+import {View,Text, ActivityIndicator, TouchableOpacity,StyleSheet,Dimensions,Image} from 'react-native'
 import Axios from 'axios'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import base_url from '../../base_url'
+import { ScrollView } from 'react-native-gesture-handler'
 export default class Home extends React.Component {
     state = {
         is_loading:true,
@@ -34,11 +35,12 @@ export default class Home extends React.Component {
         if(this.state.is_loading == false){
 
         return(
-            <View>
+            <ScrollView>
                 <TouchableOpacity onPress={this.logout} style={{borderColor:"red",backgroundColor:"red",padding:5,width:80,justifyContent:'center',alignItems:"center",marginLeft:"78%",marginTop:20}}>
                     <Text style={{color:"white",fontWeight:"bold"}}>Logout</Text>
                 </TouchableOpacity>
-                
+                <Image source={require("../../assets/logo.png")} style={{width:350,height:150,alignSelf:'center',marginTop:50}}/>
+
 
                 <View  style={styles.orderCard}>
     
@@ -106,7 +108,7 @@ export default class Home extends React.Component {
                  </View>
                        
                     </View>
-            </View>
+            </ScrollView>
         )
     }else{
         return <ActivityIndicator size="large" color="black" style={{alignSelf:"center"}}/>
