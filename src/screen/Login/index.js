@@ -53,8 +53,8 @@ render(){
             <Text style={{color:'black',fontSize:18,fontFamily:'Cinzel-VariableFont_wght',textAlign:'center'}}>PRIVATPLATZIERUNGSPROGRAMM</Text>
              <Text style={{color:'black',fontSize:26,fontFamily:'Cinzel-VariableFont_wght',textAlign:'center'}}>SICHERER KUNDENZUGRIFF</Text>
 
-        <TextInput placeholder='Name' value={this.state.name} placeholderTextColor='white' style={{width:Dimensions.get('window').width*2/2.5,height:50,borderRadius:4,borderColor:'#c9c9c9',borderWidth:.5,marginTop:50,padding:15,color:'white',backgroundColor:'#c9c9c9',fontSize:15,alignSelf:'center'}} onChangeText={(val)=>this.setState({name:val})}/>
-        <TextInput placeholder='Password' secureTextEntry value={this.state.password} placeholderTextColor='white' style={{width:Dimensions.get('window').width*2/2.5,height:50,borderRadius:4,borderColor:'#c9c9c9',borderWidth:.5,marginTop:20,padding:15,color:'white',backgroundColor:'#c9c9c9',fontSize:15,alignSelf:"center"}} onChangeText={(val)=>this.setState({password:val})}/>
+        <TextInput placeholder='NUTZERNAME' value={this.state.name} placeholderTextColor='white' style={{width:Dimensions.get('window').width*2/2.5,height:50,borderRadius:4,borderColor:'#c9c9c9',borderWidth:.5,marginTop:50,padding:15,color:'white',backgroundColor:'#c9c9c9',fontSize:15,alignSelf:'center'}} onChangeText={(val)=>this.setState({name:val})}/>
+        <TextInput placeholder='PASSWORT' secureTextEntry value={this.state.password} placeholderTextColor='white' style={{width:Dimensions.get('window').width*2/2.5,height:50,borderRadius:4,borderColor:'#c9c9c9',borderWidth:.5,marginTop:20,padding:15,color:'white',backgroundColor:'#c9c9c9',fontSize:15,alignSelf:"center"}} onChangeText={(val)=>this.setState({password:val})}/>
 
 
         <TouchableOpacity disabled={this.state.is_loading} onPress={this.login} style={{backgroundColor:'#165b93',flexDirection:'row',marginTop:30,borderColor:'#165b93',borderWidth:1,borderRadius:5,justifyContent:'center',alignItems:'center',padding:10,width:'80%',alignSelf:'center'}}>

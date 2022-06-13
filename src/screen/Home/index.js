@@ -51,50 +51,47 @@ export default class Home extends React.Component {
                     <View style={{ marginLeft:Dimensions.get('window').width*2/40,marginTop:10 }}>
 
                     <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Account</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>KONTO-#</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold',fontFamily:"Cinzel-VariableFont_wght" }}>{this.state.user.account} </Text>
                    </View>
 
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Name</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>VOLLSTÄNDIGE NAMEN</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold',fontFamily:"Cinzel-VariableFont_wght" }}>{this.state.user.name} </Text>
                    </View>
    
    
    
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Email</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>E-MAIL</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold',fontFamily:"Cinzel-VariableFont_wght" }}>{this.state.user.email} </Text>
                    </View>
    
                  
                    
 
-                   <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Account</Text>
-                   <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.account} </Text>
-                   </View>
+                   
 
 
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Routing</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>ROUTING/IBAN/BIC/SWIFT</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.routing} </Text>
                    </View>
 
                     
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Phone Number</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>TELEFON</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.phone_no} </Text>
                    </View>
 
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Code</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>KONTOSTAND (IN CHF)</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.code} </Text>
                    </View>
 
                  
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Product Name</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>BEGÜNSTIGTE BANK</Text>
                    <Text style={{ fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.product_name} </Text>
 
                   
@@ -103,7 +100,7 @@ export default class Home extends React.Component {
 
 
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Address</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>ADRESSE</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.address} </Text>
                    </View>
 

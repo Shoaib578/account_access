@@ -16,7 +16,7 @@ render() {
 
                 <Stack.Screen name="Login" component={Login} options={{headerShown:false}}/>
 
-                <Stack.Screen name="Home" component={Home} options={{title:"Account Details",headerTitleAlign:"center",headerTitleStyle:{fontFamily:"Cinzel-VariableFont_wght"}}}/>
+                <Stack.Screen name="Home" component={Home} options={{title:"KONTODETAILS",headerTitleAlign:"center",headerTitleStyle:{fontFamily:"Cinzel-VariableFont_wght"}}}/>
 
             </Stack.Navigator>
         </NavigationContainer>
