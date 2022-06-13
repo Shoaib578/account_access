@@ -35,12 +35,14 @@ export default class Home extends React.Component {
         if(this.state.is_loading == false){
 
         return(
-            <ScrollView>
+            <ScrollView style={{backgroundColor:"white",flex:1}}>
                 <TouchableOpacity onPress={this.logout} style={{borderColor:"red",backgroundColor:"red",padding:5,width:80,justifyContent:'center',alignItems:"center",marginLeft:"78%",marginTop:20}}>
                     <Text style={{color:"white",fontWeight:"bold"}}>Logout</Text>
                 </TouchableOpacity>
-                <Image source={require("../../assets/logo.png")} style={{width:350,height:150,alignSelf:'center',marginTop:30}}/>
+                <Image source={require("../../assets/logo.png")} style={{width:350,height:150,alignSelf:'center',marginTop:10}}/>
 
+                <Text style={{color:'black',fontSize:18,fontFamily:'Cinzel-VariableFont_wght',textAlign:'center'}}>PRIVATPLATZIERUNGSPROGRAMM</Text>
+                <Text style={{color:'black',fontSize:26,fontFamily:'Cinzel-VariableFont_wght',textAlign:'center'}}>SICHERER KUNDENZUGRIFF</Text>
 
                 <View  style={styles.orderCard}>
     
@@ -49,50 +51,50 @@ export default class Home extends React.Component {
                     <View style={{ marginLeft:Dimensions.get('window').width*2/40,marginTop:10 }}>
 
                     <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15 }}>Account</Text>
-                   <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.account} </Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Account</Text>
+                   <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold',fontFamily:"Cinzel-VariableFont_wght" }}>{this.state.user.account} </Text>
                    </View>
 
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15 }}>Name</Text>
-                   <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.name} </Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Name</Text>
+                   <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold',fontFamily:"Cinzel-VariableFont_wght" }}>{this.state.user.name} </Text>
                    </View>
    
    
    
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15 }}>Email</Text>
-                   <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.email} </Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Email</Text>
+                   <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold',fontFamily:"Cinzel-VariableFont_wght" }}>{this.state.user.email} </Text>
                    </View>
    
                  
                    
 
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15 }}>Account</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Account</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.account} </Text>
                    </View>
 
 
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15 }}>Routing</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Routing</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.routing} </Text>
                    </View>
 
                     
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15 }}>Phone Number</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Phone Number</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.phone_no} </Text>
                    </View>
 
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15 }}>Code</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Code</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.code} </Text>
                    </View>
 
                  
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15 }}>Product Name</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Product Name</Text>
                    <Text style={{ fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.product_name} </Text>
 
                   
@@ -101,7 +103,7 @@ export default class Home extends React.Component {
 
 
                    <View style={{ flexDirection:'row',justifyContent:'space-between',marginTop:10,borderBottomWidth:1,borderColor:'black',width:'95%' }}>
-                   <Text style={{ fontSize:15 }}>Address</Text>
+                   <Text style={{ fontSize:15,fontFamily:"Cinzel-VariableFont_wght" }}>Address</Text>
                    <Text style={{ right:20,fontSize:15,color:'blue',fontWeight:'bold' }}>{this.state.user.address} </Text>
                    </View>
 

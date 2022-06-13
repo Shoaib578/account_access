@@ -41,6 +41,8 @@ render() {
         <View style={{flex:1,justifyContent: 'center',alignItems: 'center'}}>
             <View style={{width: 353,height:150}} >
             <Image source={require('../../assets/logo.png')} style={{ width:'100%', height:'100%' }}/>
+            <Text style={{color:'black',fontSize:18,fontFamily:'Cinzel-VariableFont_wght',textAlign:'center'}}>PRIVATPLATZIERUNGSPROGRAMM</Text>
+             <Text style={{color:'black',fontSize:26,fontFamily:'Cinzel-VariableFont_wght',textAlign:'center'}}>SICHERER KUNDENZUGRIFF</Text>
 
             </View>
         </View>
